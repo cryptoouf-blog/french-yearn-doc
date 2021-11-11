@@ -1,11 +1,13 @@
 ---
 title: faq.yearn.finance
-tags: 'docs, faq, published'
+tags: docs, faq, published
 ---
 
 # FAQ
 
 ## General
+
+### test pour synchro
 
 ### Est-il sûr d'investir de l'argent dans yearn?
 
@@ -31,27 +33,27 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 ### yearn.finance
 
-* [yearn.finance](https://yearn.finance/) héberge des interfaces utilisateur pour les produits  suivant:  **Vaults**, **Earn**, **Zap**, **APR**, et **Cover** .
+* [yearn.finance](https://yearn.finance) héberge des interfaces utilisateur pour les produits suivant: **Vaults**, **Earn**, **Zap**, **APR**, et **Cover** .
 
-### Vaults \(coffres-forts\)
+### Vaults (coffres-forts)
 
 * [yearn.finance/vaults](https://yearn.finance/vaults)
 
-#### Qu'est ce qu'un  Vault?
+#### Qu'est ce qu'un Vault?
 
 * Les Vaults utilisent des stratégies pour automatiser les meilleurs rendement disponibles.
 * Ils ont été conçus pour que la communauté puisse travailler ensemble pour élaborer de nouvelles stratégies afin de trouver le meilleur rendement.
 * Andre a expliqué les [vaults](https://medium.com/iearn/yearn-finance-v2-af2c6a6a3613) et les [delegated vaults](https://medium.com/iearn/delegated-vaults-explained-fa81f1c3fce2) dans ses deux posts.
 * Simplement, les vaults peuvent faire cela:
   * Utilisez n'importe quel actif comme liquidité.
-  * Utilisez la liquidité comme garantie \(collateral\) et gérez la garantie à un niveau sûr afin de ne jamais faire défaut.
+  * Utilisez la liquidité comme garantie (collateral) et gérez la garantie à un niveau sûr afin de ne jamais faire défaut.
   * Emprunter des stablecoins.
   * Utiliser ces stablecoins pour générer des intérets
   * Réinvestir les stablecoins engendrés.
 
 #### Mais je ne peux pas faire tout ça moi-même?
 
-* Oui, vous pouvez, mais les vaults vous aident à économiser sur les frais de gaz, à  maintenir à un bon ratio collatéral / dette afin de ne pas faire vous faire liquider, et à optimiser automatiquement  les stratégies utilisant des stablecoins pour générer des  intérets les plus important possibles, même lorsque vous dormez.
+* Oui, vous pouvez, mais les vaults vous aident à économiser sur les frais de gaz, à maintenir à un bon ratio collatéral / dette afin de ne pas faire vous faire liquider, et à optimiser automatiquement les stratégies utilisant des stablecoins pour générer des intérets les plus important possibles, même lorsque vous dormez.
 
 #### **Je vois un rendement dans la page dédiée aux vaults, est-ce le rendement actuel?**
 
@@ -79,7 +81,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 * **Quelle est la différence entre les vaults ETH et WETH?**
   * Aucun en terme de rendement. Les ETH déposés seront transformés en WETH. Avoir un vault WETH facilite l’interaction pour d’autres protocoles Ethereum.
 * **Comment le vault ETH se protège de la liquidation?**
-  * Ce vault prend le prix de l’ETH directement du Maker OSM \(Oracle Security Model\), un système qui lit le prix des Oracle une heure en avance. Cela laisse une heure au vault pour payer sa dette avant la liquidation. D’autre part, le vault continue d’augmenter ses garanties en redéposant les profits à chaque récolte.
+  * Ce vault prend le prix de l’ETH directement du Maker OSM (Oracle Security Model), un système qui lit le prix des Oracle une heure en avance. Cela laisse une heure au vault pour payer sa dette avant la liquidation. D’autre part, le vault continue d’augmenter ses garanties en redéposant les profits à chaque récolte.
 
 **Les autres vaults**
 
@@ -92,7 +94,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### **Pourquoi le yCRV ne vaut pas 1$, n’est-ce pas un stablecoin?**
 
-* Non, yCRV ne vaut pas 1$ et n’est PAS un stablecoin. Vous pouvez penser à yCRV comme un index de stablecoins à rendement \(yDAI+yUSDC+yUSDT+yTUSD\), qui génère lui-même du rendement \(frais de trading de la pool Curve Y\). Le prix du yCRV est donc non-décroissant.
+* Non, yCRV ne vaut pas 1$ et n’est PAS un stablecoin. Vous pouvez penser à yCRV comme un index de stablecoins à rendement (yDAI+yUSDC+yUSDT+yTUSD), qui génère lui-même du rendement (frais de trading de la pool Curve Y). Le prix du yCRV est donc non-décroissant.
 
 **Si je retire mes yCRV du vault, est-ce qu’ils sont reconvertis dans la pool Curve y, ou dois-je faire quelque chose d’autre?**
 
@@ -102,7 +104,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 * Les vaults de deux monnaies différentes auront un rendement surement différents. Le nouveau vault sBTC suit la même stratégie que le vault yCRV, et pourtant leurs rendements sont bien différents. La meilleure réponse serait que seulement peu de plateformes acceptent de staké du YFI et il y a donc peu de stratégies différentes possibles pour l’instant.
 
-#### **J’ai déposé des fonds dans un vault, que vais-je récupérer lors du retrait?** 
+#### **J’ai déposé des fonds dans un vault, que vais-je récupérer lors du retrait?**
 
 * Vous récupérerez toujours uniquement le même type d’actif que celui que vous aurez déposé.
 * Vous récupérerez le montant déposé, plus le rendement gagné grâce à la pool, moins les frais.
@@ -112,20 +114,20 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 \*\*\*\*
 
 * **0.5% de frais** sur les fonds retirés d’une stratégie active
-  * Chaque vault a un certain montant des fonds déposés qui dort, et la majorité utilisé dans la stratégie. Les fonds dormants sont la différence entre `vault holdings` et `strategy holdings`, vous pouvez les consulter sur [feel the yearn](https://feel-the-yearn.app/).
+  * Chaque vault a un certain montant des fonds déposés qui dort, et la majorité utilisé dans la stratégie. Les fonds dormants sont la différence entre `vault holdings` et `strategy holdings`, vous pouvez les consulter sur [feel the yearn](https://feel-the-yearn.app).
   * Quand vous retirez, si vos fonds viennent des fonds dormants, vous ne paierez aucun frais. S’ils sont utilisés activement dans une stratégie, vous paierez les frais de retraits de 0.5%.
 * **5% de frais** sur le rendement additionnel
   * Destinés aux stratégies créées par la communauté, comme la nouvelle stratégie du vault yETH. Actuellement, 10% de ces frais vont au créateur de la stratégie. Les 90% restantes sont redirigés à la trésorerie, puis redistribués à la gouvernance.
 
-#### 
+####
 
 **Pouvez-vous expliquer les 5% de frais sur le rendement additionnel?**
 
 * Avant, ce frais s’appelait un frais sur le “gas subventionné”, ce que seul Andre comprenait vraiment. Techniquement, ce n’est pas un frais de performance - c’est un frais appliqués sur certaines transactions génératrices de profit qui demande un coût de gas élevé et sont critiques au bon fonctionnement interne du vault.
 * Chaque vault a plusieurs niveaux. Voici deux exemples illustrant où est prélevé ce frais lorsque la fonction `harvest()` est appellée.
 * Exemple du vault yCRV:
-  * Niveau 1: les stablecoins gagnent des intérêts sur les marchés monétaires \(Compound, Aave, dYdX\).
-  * Niveau 2: les tokens du niveau 1 \(yDAI, yUSDC, yUSDT, et yTUSD\) sont fournis comme liquidité à la pool yCRV pour récupérer des frais de trading.
+  * Niveau 1: les stablecoins gagnent des intérêts sur les marchés monétaires (Compound, Aave, dYdX).
+  * Niveau 2: les tokens du niveau 1 (yDAI, yUSDC, yUSDT, et yTUSD) sont fournis comme liquidité à la pool yCRV pour récupérer des frais de trading.
   * Niveau 3: la stratégie gagne des tokens CRV en récompense, qu’elle réinvestis dans la pool yCRV - **c’est le seul niveau où ce frais de 5% est perçu**.
 * Exemple du vault USDC:
   * Niveau 1: Intérêts perçus pour être prêtés sur Compound.
@@ -146,7 +148,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 **Rendement**
 
 * La création d’un dashboard qui montrerait clairement l’APY actuel de toutes les positions ouvertes est prévue. Pour l’instant, les Vaults étant toujours en beta, nosu n’affichons pas les APY en temps réel, mais ils sont postés sur [Twitter](https://twitter.com/iearnfinance) régulièrement. Vous pouvez obtenir une estimation en allant regarder quelles sont les stratégies des vaults.
-* Par exemple, si le vault yCRV cultive du CRV, vous pouvez vérifier le rendement actuel sur la [page d’accueil de Curve](https://www.curve.fi/) pour la Y pool.
+* Par exemple, si le vault yCRV cultive du CRV, vous pouvez vérifier le rendement actuel sur la [page d’accueil de Curve](https://www.curve.fi) pour la Y pool.
 
 #### Stratégies des Vaults
 
@@ -156,7 +158,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 **Quelles sont les stratégies actuelles?**
 
-* Vous pouvez aller voir les stratégies mises en place sur [feel-the-yearn](https://feel-the-yearn.vercel.app/).
+* Vous pouvez aller voir les stratégies mises en place sur [feel-the-yearn](https://feel-the-yearn.vercel.app).
 * À l’avenir, nous prévoyons de créer un dashboard pour rendre les stratégies et les rendements plus compréhensibles.
 
 **Qui a le contrôle les stratégies?**
@@ -182,7 +184,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 #### Qu’est-ce que Earn?
 
 * Earn est un aggrégateur de plateformes de prêt qui rebalance les fonds entre elles pour obtenir le meilleur rendement.
-* Vous pouvez déposer du DAI, USDC, USDT, TUSD, or sUSD et les fonds seront automatiquement prêtés aux meilleurs taux sur [Compound](https://compound.finance/), [dYdX](https://dydx.exchange/) or [Aave](https://app.aave.com/home) \(Ddex et Fulcrum sont arrêtés\).
+* Vous pouvez déposer du DAI, USDC, USDT, TUSD, or sUSD et les fonds seront automatiquement prêtés aux meilleurs taux sur [Compound](https://compound.finance), [dYdX](https://dydx.exchange) or [Aave](https://app.aave.com/home) (Ddex et Fulcrum sont arrêtés).
 * Learn more in the [Yearn Docs](https://docs.yearn.finance/yearn.finance/yearn).
 
 ### Zap
@@ -192,7 +194,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 #### What is Zap?
 
 * Zap permet aux utilisateurs de convertir leurs tokens disponibles en seulement une interactions, réduisant les frais de transactions.
-* Les Zaps ont été créés par DefiZap qui est maintenant [Zapper.fi](https://zapper.fi/), une sorte de service de routage DeFi tout-en-un.
+* Les Zaps ont été créés par DefiZap qui est maintenant [Zapper.fi](https://zapper.fi), une sorte de service de routage DeFi tout-en-un.
 
 #### Pourquoi utiliser Zap?
 
@@ -201,7 +203,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### Que puis-je faire avec Zaps dans Yearn?
 
-* Avec un zap, vous pouvez transférer vos DAI en yCRV en une transaction par exemple. Normallement, vous auriez du aller sur yearn.finance/earn, déposer des DAI, récupérer des yDAI, et déposer ces yDAI sur [curve.fi](http://curve.fi/) pour récupérer des yCRV. Avec Zap, tout ça se fait en une transaction!
+* Avec un zap, vous pouvez transférer vos DAI en yCRV en une transaction par exemple. Normallement, vous auriez du aller sur yearn.finance/earn, déposer des DAI, récupérer des yDAI, et déposer ces yDAI sur [curve.fi](http://curve.fi) pour récupérer des yCRV. Avec Zap, tout ça se fait en une transaction!
 
 #### Super, quels sont les désavantages?
 
@@ -209,7 +211,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 ### yInsure / Cover
 
-* [yinsure.finance](https://yinsure.finance/)
+* [yinsure.finance](https://yinsure.finance)
 
 #### Qu’est-ce que yInsure?
 
@@ -221,28 +223,28 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### yTrade
 
-* [ytrade.finance](https://ytrade.finance/)
-* Trading de stablecoins avec levier \(testnet\)
+* [ytrade.finance](https://ytrade.finance)
+* Trading de stablecoins avec levier (testnet)
 
 #### yLiquidate
 
-* [yliquidate.finance](https://yliquidate.finance/)
-* Liquidations automatique pour Aave \(testnet\)
+* [yliquidate.finance](https://yliquidate.finance)
+* Liquidations automatique pour Aave (testnet)
 
 #### ySwap
 
-* [yswap.exchange](https://yswap.exchange/)
-* Automated Marker Maker à côté unique \(test en mainnet\)
+* [yswap.exchange](https://yswap.exchange)
+* Automated Marker Maker à côté unique (test en mainnet)
 
 #### yBorrow
 
-* [yborrow.finance](https://yborrow.finance/)
-* Vaults de délégation de crédit pour du prêt de smart contract a smart contract \(testnet\).
+* [yborrow.finance](https://yborrow.finance)
+* Vaults de délégation de crédit pour du prêt de smart contract a smart contract (testnet).
 
 ## Communication
 
-* [Forum](https://gov.yearn.finance/)
-  * Beaucoup de discussion en temps réel ont lieu sur le Telegram et le Discord, mais pour qu’une proposition devienne une YIP \(Yearn Improvement Proposal\) il faut qu’elle soit postée et discuté sur le forum.
+* [Forum](https://gov.yearn.finance)
+  * Beaucoup de discussion en temps réel ont lieu sur le Telegram et le Discord, mais pour qu’une proposition devienne une YIP (Yearn Improvement Proposal) il faut qu’elle soit postée et discuté sur le forum.
   * C’est l’endroit principal pour que les détenteurs du token puissent aller vérifier les sujets de gouvernance.
 * [Discord](https://discord.gg/94CmMdt)
   * Comprenant des sections dans toutes les langues
@@ -260,7 +262,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### Qu’est-ce qu’une YIP? Pourquoi sont-elles importantes?
 
-* Une YIP, ou Yearn Improvement Proposal _\(Proposition d’Amélioration de Yearn\)_, est la façon dont les nouvelles fonctionnalités sont ajoutées à l’écossytème yearn. Les utilisateurs ouvrent uen proposition sur le forum, celle-ci est discutée et sont niveau d’approbation est évalué. Si beaucoup d’utilisateurs sont d’accords avec cette propostion, elle peut ensuite être postée on-chain pour que tout le monde puisse la voter.
+* Une YIP, ou Yearn Improvement Proposal _(Proposition d’Amélioration de Yearn)_, est la façon dont les nouvelles fonctionnalités sont ajoutées à l’écossytème yearn. Les utilisateurs ouvrent uen proposition sur le forum, celle-ci est discutée et sont niveau d’approbation est évalué. Si beaucoup d’utilisateurs sont d’accords avec cette propostion, elle peut ensuite être postée on-chain pour que tout le monde puisse la voter.
 
 #### Combien de personnes doivent voter pour qu’une YIP proposée on-chain passe?
 
@@ -268,10 +270,10 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### Comment faire une proposition?
 
-* Il y a un modèle sur [Github](https://github.com/iearn-finance/YIPS/blob/master/yip-X.md), et sur le [forum](https://gov.yearn.finance/) si vous postez sous “proposals” ou “discussion”, le modèle devrait s’auto-remplir.
+* Il y a un modèle sur [Github](https://github.com/iearn-finance/YIPS/blob/master/yip-X.md), et sur le [forum](https://gov.yearn.finance) si vous postez sous “proposals” ou “discussion”, le modèle devrait s’auto-remplir.
 * Le processus est généralement:
   1. Discussion sur le forum
-  2. YIP officielle \(généralement faite par les modérateurs\), ajoutée au github et mise on-chain
+  2. YIP officielle (généralement faite par les modérateurs), ajoutée au github et mise on-chain
   3. Annonce
 
 #### Qui peut faire une proposition?
@@ -312,7 +314,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### J’ai voté et je sais qu’il faut que j’attende 3 jours, y a-t-il un endroit où je puisse voir le temps restant avant de pouvoir unstake mes YFI?
 
-* Oui! Vous pouvez lire directement le [smart contract](https://etherscan.io/address/0xBa37B002AbaFDd8E89a1995dA52740bbC013D992#readContract), allez au votelock \(28\) et rentrez votre addresse. Vous devriez voir le numéro de block ethereum auquel vous pourrez unstake vos tokens.
+* Oui! Vous pouvez lire directement le [smart contract](https://etherscan.io/address/0xBa37B002AbaFDd8E89a1995dA52740bbC013D992#readContract), allez au votelock (28) et rentrez votre addresse. Vous devriez voir le numéro de block ethereum auquel vous pourrez unstake vos tokens.
 
 #### Quelle est la différence entre voter pour un sondage sur le forum et voter on-chain?
 
@@ -324,7 +326,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 #### Pourquoi ne puis-je pas récupérer mes récompenses de staking?
 
-* Pour récupérer vos récompenses vous devez 1\) avoir des tokens stakés, et 2\) avoir voté depuis plus de trois jours pour pouvoir récupérer. Cela devrait être modifié dans une prochaine mise à jour.
+* Pour récupérer vos récompenses vous devez 1) avoir des tokens stakés, et 2) avoir voté depuis plus de trois jours pour pouvoir récupérer. Cela devrait être modifié dans une prochaine mise à jour.
 
 ### yDAO
 
@@ -347,8 +349,8 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 * En vous connectan ici à Pokemol avec votre wallet web3. Cliquez sur New Proposal sur le boutton en haut à droite. Cliquez sur member.
   * Titre: votre nom/entité
-  * Description: “J’engage X YFI en échange de Y parts” \(Restez consistant avec le montant de 0.1 YFI = une part s’il vous plaît.\)
-  * Lien: Lien vers votre entité \(Site web, Twitter, Linkedin\)
+  * Description: “J’engage X YFI en échange de Y parts” (Restez consistant avec le montant de 0.1 YFI = une part s’il vous plaît.)
+  * Lien: Lien vers votre entité (Site web, Twitter, Linkedin)
   * Share Requested: Le nombre de parts qui sont demandées
   * Token tribute: La quantité de YFI que vous souhaitez donner.
   * Loot: Le nombre de parts demandées.
@@ -370,7 +372,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 ### Qu’est-ce que la multisig et que font-ils?
 
-* L’addresse multi-signature est expliquée en détails dans cette [thread](https://gov.yearn.finance/t/yfi-minting-ownership/155). Essentiellement, c’est un compte à multi-signature \(6 sur 9\) qui contrôle la création de YFI si un vote pour créer plus de tokens passe.
+* L’addresse multi-signature est expliquée en détails dans cette [thread](https://gov.yearn.finance/t/yfi-minting-ownership/155). Essentiellement, c’est un compte à multi-signature (6 sur 9) qui contrôle la création de YFI si un vote pour créer plus de tokens passe.
 
 ### Qui sont les 9 multisignataires?
 
@@ -381,7 +383,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 * [Milkyklim](https://milkyklim.keybase.pub/yearn-social-proof.txt)
 * [Joe Mahon aka Substreight](https://twitter.com/Substreight/status/1299780260737630209)
 * [Tarun Chitra, Gauntlet](https://twitter.com/gauntletnetwork/status/1299778153674616833)
-* [Vasiliy Shapovalov, p2p.org](https://twitter.com/_vshapovalov/status/1299799139635679232)
+* [Vasiliy Shapovalov, p2p.org](https://twitter.com/\_vshapovalov/status/1299799139635679232)
 * [Mariano Conti, ex-MakerDAO](https://twitter.com/nanexcool)
 
 ### Les multisignataires ont-ils changé?
@@ -435,20 +437,20 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 ### J’ai envoyé ma transaction ETH mais elle est marquée comme “pending”? Comment régler ça?
 
-* Vous devez toujours faire attention à régler correctement votre gas si vous voulez qu’une transaction se déroule rapidement. Vérifiez les prix actuels du gas chez [Ethgasstation](https://ethgasstation.info/) ou [gasnow](https://www.gasnow.org/).
+* Vous devez toujours faire attention à régler correctement votre gas si vous voulez qu’une transaction se déroule rapidement. Vérifiez les prix actuels du gas chez [Ethgasstation](https://ethgasstation.info) ou [gasnow](https://www.gasnow.org).
 * Si vous utilisez MetaMask et que vous avez effectué votre transaction mais qu’elle est trop lente, vous avez la possibilité de l’accélérer en cliquant sur le bouton d’accélération situé sous votre dernière transaction en attente sous “activité”. Cela devrait vous permettre de renvoyer la même transaction avec un prix de gas plus élevé pour la faire confirmer plus rapidement.
-* Si vous avez tout essayé et que votre transaction est toujours bloquée en attente, vous pouvez la corriger en envoyant une transaction au nonce de la première transaction bloquée avec un prix de l’essence élevé pour écraser la file d’attente bloquée. Voici un bon [guide](https://ethgasstation.info/blog/stuck-transaction-guide/#:~:text=Select) expliquant comment faire.
+* Si vous avez tout essayé et que votre transaction est toujours bloquée en attente, vous pouvez la corriger en envoyant une transaction au nonce de la première transaction bloquée avec un prix de l’essence élevé pour écraser la file d’attente bloquée. Voici un bon [guide](https://ethgasstation.info/blog/stuck-transaction-guide/#:\~:text=Select) expliquant comment faire.
 
 ### Pourquoi les frais de retraits sont si élevés?
 
-* Si vous constatez des frais plus élevés que la normale lors de l’utilisation de l’écosystème Yearn, cela peut être dû à la congestion d’Ethereum et au coût anormalement élevé du gas. Consultez la page [Ethgasstation](https://ethgasstation.info/). Vous avez le choix entre attendre que le prix du gas baisse ou dépeaugmenter votre prix de gas pour traiter votre transaction maintenant.
-* Si les prix du gas sont extrêmement élevés, cela signifie qu’il y a une erreur et que la transaction ne pourra pas être traitée. Par exemple, si vous essayez de déposer un jeton que vous n’avez pas ou s’il n’y a pas de couverture disponible pour un contrat sur [http://yinsure.finance/](http://yinsure.finance/).
+* Si vous constatez des frais plus élevés que la normale lors de l’utilisation de l’écosystème Yearn, cela peut être dû à la congestion d’Ethereum et au coût anormalement élevé du gas. Consultez la page [Ethgasstation](https://ethgasstation.info). Vous avez le choix entre attendre que le prix du gas baisse ou dépeaugmenter votre prix de gas pour traiter votre transaction maintenant.
+* Si les prix du gas sont extrêmement élevés, cela signifie qu’il y a une erreur et que la transaction ne pourra pas être traitée. Par exemple, si vous essayez de déposer un jeton que vous n’avez pas ou s’il n’y a pas de couverture disponible pour un contrat sur [http://yinsure.finance/](http://yinsure.finance).
 
 ## Projets Reliés
 
-### [Curve](https://www.curve.fi/)
+### [Curve](https://www.curve.fi)
 
-* Curve est un échange de réserves de liquidité sur Ethereum \(comme [Uniswap](https://app.uniswap.org/#/)\) fait pour 1\) de l’échange extrêmement efficient de stablecoins, 2\) un revenu supplémentaire à faible risque pour les fournisseurs de liquidités, sans coût d’opportunité. Curve permet aux utilisateurs \(et aux smart contracts comme 1inch, Paraswap, Totle et [Dex.ag](http://dex.ag/)\) de négocier entre DAI et USDC avec un algorithme sur mesure à faible glissement et à faible coût, conçu spécifiquement pour les stablecoins et gagner des commissions. Derrière, la réserve de liquidités est également fournie au protocole Compound ou yearn.finance où il génère encore plus de revenus pour les fournisseurs de liquidités.
+* Curve est un échange de réserves de liquidité sur Ethereum (comme [Uniswap](https://app.uniswap.org/#/)) fait pour 1) de l’échange extrêmement efficient de stablecoins, 2) un revenu supplémentaire à faible risque pour les fournisseurs de liquidités, sans coût d’opportunité. Curve permet aux utilisateurs (et aux smart contracts comme 1inch, Paraswap, Totle et [Dex.ag](http://dex.ag)) de négocier entre DAI et USDC avec un algorithme sur mesure à faible glissement et à faible coût, conçu spécifiquement pour les stablecoins et gagner des commissions. Derrière, la réserve de liquidités est également fournie au protocole Compound ou yearn.finance où il génère encore plus de revenus pour les fournisseurs de liquidités.
 * Curve [FAQ](https://www.curve.fi/rootfaq).
 
 ### [Aave](https://app.aave.com/home)
@@ -459,9 +461,9 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 ### Où puis-je en apprendre plus sur Yearn?
 
-* [Learn Yearn](https://www.learnyearn.finance/)
+* [Learn Yearn](https://www.learnyearn.finance)
 * [Medium.com/iearn](https://medium.com/iearn)
-* [yCosystem](https://ycosystem.info/)
+* [yCosystem](https://ycosystem.info)
 
 ### Liste des Smart Contracts
 
@@ -482,14 +484,14 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 
 ### Référence détaillée des vaults
 
-[https://vaults.finance/](https://vaults.finance/)
+[https://vaults.finance/](https://vaults.finance)
 
 ### Statistiques
 
-* [yieldfarming.info](https://yieldfarming.info/)
-* [yVault ROI Calculator](https://py-earn.herokuapp.com/)
+* [yieldfarming.info](https://yieldfarming.info)
+* [yVault ROI Calculator](https://py-earn.herokuapp.com)
 * [stats.finance/yearn](https://stats.finance/yearn)
-* [Feel The Yearn](https://feel-the-yearn.vercel.app/)
+* [Feel The Yearn](https://feel-the-yearn.vercel.app)
 * [Initial Distribution Dune Dashboard](https://explore.duneanalytics.com/dashboard/yearn)
 * [Voting Stats Dune Dashboard](https://explore.duneanalytics.com/public/dashboards/Lqnxzm7fa8NVhKC4kc37DDFPZgqXryaIjyLRYAYp)
 * [Vaults Stats Dune Dashboard](https://explore.duneanalytics.com/public/dashboards/g0bGfgloeXBd9C18jpBjdXi5KkQjR7IXYqFRUnHk)
@@ -507,7 +509,7 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
 * [The FTX Podcast - Andre Cronje DeFI Architect](https://open.spotify.com/episode/6d14TJtQU7eB69azelpdeh)
 * [Zapper Community Call - With Andre](https://www.youtube.com/watch?v=venoiaiVZ-U)
 * [In DeFi My Money is Actually Mine. Its a Beautiful Concept But it Comes With Responsibilities - Andre Cronje](https://anchor.fm/camila-russo/episodes/In-DeFi-My-Money-is-Actually-Mine--Its-a-Beautiful-Concept-But-it-Comes-With-Responsibilities-Andre-Cronje-ehs3op)
-* [YFI: Farming the Farmers \| Andre Cronje](http://podcast.banklesshq.com/25-king-of-the-yield-farmers-andre-cronje)
+* [YFI: Farming the Farmers | Andre Cronje](http://podcast.banklesshq.com/25-king-of-the-yield-farmers-andre-cronje)
 
 ### Blogs
 
@@ -515,11 +517,10 @@ Mais si vous pensez que quelque chose peut être amélioré ou si vous avez trou
   * [Yinsure.finance: A new insurance primitive](https://medium.com/iearn/yinsure-finance-a-new-insurance-primitive-77d5d4217896)
   * [Delegated Vaults Explained](https://medium.com/iearn/delegated-vaults-explained-fa81f1c3fce2)
   * [Yearn.finance v2](https://medium.com/iearn/yearn-finance-v2-af2c6a6a3613?source=---------3------------------)
-  * [Yearn Governance Forum](https://medium.com/iearn/yearn-governance-forum-7b7c9d0300ac?source=collection_home---6------2-----------------------)
+  * [Yearn Governance Forum](https://medium.com/iearn/yearn-governance-forum-7b7c9d0300ac?source=collection\_home---6------2-----------------------)
   * [YFI rewards pool](https://medium.com/iearn/yfi-rewards-pool-810ef9256ec6)
   * [YFI](https://medium.com/iearn/yfi-df84573db81)
 
 ### Logos
 
-* Dans le discord sour \#media-resources
-
+* Dans le discord sour #media-resources
