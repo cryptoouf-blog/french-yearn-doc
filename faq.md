@@ -5,7 +5,7 @@ tags: 'docs, faq, published'
 
 # FAQ
 
-## General
+## General test syncrho github to gitbook
 
 ### Est-il sûr d'investir de l'argent dans yearn?
 
